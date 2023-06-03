@@ -1,10 +1,13 @@
 import styles from "./test.module.css";
 
 export default function Test() {
+    async function handleOnClickTestButton() {
+        console.log("Clicked");
+    }
+
     return (
         <div className={styles.buttons}>
-            <button>Mint</button>
-            <button>Test</button>
+            <button onClick={handleOnClickTestButton}>Test</button>
         </div>
     );
 }
