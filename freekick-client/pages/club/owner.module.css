@@ -1,5 +1,5 @@
 .container {
-    background: conic-gradient(from 111.58deg at 75.64% 50.95%, #A9A9A9 0deg, #515151 0.04deg, #778994 93.6deg, #A2ADAD 221.25deg, #DADBDC 360deg);
+    background: conic-gradient(from 111.58deg at 75.64% 50.95%, #1F79FF 0deg, #1F79FF 0.04deg, #27B1FF 93.6deg, #23FFFF 221.25deg, #00B3FF 360deg);
 }
 
 .main {
@@ -10,7 +10,7 @@
 }
 
 .img_box {
-    margin-bottom: 2rem;
+    margin: 4rem 0;
 }
 
 .button {

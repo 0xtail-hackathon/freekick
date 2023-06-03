@@ -59,7 +59,13 @@ export default function Navbar({ isHome }: NavbarProps) {
                     {selector.isSignedIn() && (
                         <>
                             <button className={styles.account_button}>
-                                1,000,000 KIC
+                                <Image
+                                    src={"/ball_icon.svg"}
+                                    alt="ball"
+                                    width={15}
+                                    height={15}
+                                />
+                                <div>1,000 KIC</div>
                             </button>
                             <button className={styles.signout_button}>
                                 {accountId}

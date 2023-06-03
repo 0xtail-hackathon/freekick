@@ -1,10 +1,12 @@
 import styles from "./home.module.css";
 import Slider from "@/components/Slider";
 import Layout from "@/components/Layout";
+import Seo from "@/components/Seo";
 
 export default function Home() {
     return (
         <Layout>
+            <Seo title="Home" />
             <div className={styles.container}>
                 <div className={styles.newbie}>
                     <h2 className={styles.h2}>Hi, Newbie</h2>

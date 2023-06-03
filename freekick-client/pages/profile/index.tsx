@@ -1,19 +1,16 @@
-import Head from "next/head";
-import { WalletSelectorContextProvider } from "../contexts/WalletSelectorContext";
-import Content from "../components/Content";
+import Seo from "@/components/Seo";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Profile() {
     return (
         <div>
-            <Head>
-                <title>Freekick - Profile</title>
-            </Head>
+            <Seo title="Profile" />
 
-            <div className="container mx-auto px-4">
-                <WalletSelectorContextProvider>
+            <div className="container">
+                <Link href="/profile/done">
                     <Image
-                        src={"/page-profile.svg"}
+                        src={"/page_profile.png"}
                         alt="Slide"
                         quality={70}
                         height={400}
@@ -26,7 +23,7 @@ export default function Profile() {
                             objectFit: "cover",
                         }}
                     />
-                </WalletSelectorContextProvider>
+                </Link>
             </div>
         </div>
     );

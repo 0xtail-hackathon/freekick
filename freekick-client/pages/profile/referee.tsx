@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useWalletSelector } from "@/contexts/WalletSelectorContext";
 import { useCallback, useState } from "react";
 import Modal from "@/components/Modal";
+import Seo from "@/components/Seo";
 
 export default function Referee() {
     const [isOpenModal, setOpenModal] = useState<boolean>(false);
@@ -21,6 +22,7 @@ export default function Referee() {
 
     return (
         <div className={styles.container}>
+            <Seo title="Referee" />
             {isOpenModal && (
                 <Modal onClickToggleModal={onClickToggleModal}>
                     <Image

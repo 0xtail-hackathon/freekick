@@ -1,11 +1,13 @@
 import Navbar from "@/components/Navbar";
 import styles from "./create.module.css";
 import Image from "next/image";
-import { useWalletSelector } from "@/contexts/WalletSelectorContext";
+import { useRouter } from "next/router";
 
 export default function Create() {
+    const router = useRouter();
+
     function handleOnClickCreateButton() {
-        window.location.href = "/club/";
+        router.push("/club/owner");
     }
 
     return (
@@ -14,7 +16,7 @@ export default function Create() {
             <main className={styles.main}>
                 <div className={styles.img_box}>
                     <Image
-                        src="/club/create.svg"
+                        src="/club/create.png"
                         alt="create"
                         width={361}
                         height={598}
