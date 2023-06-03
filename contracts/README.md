@@ -2,7 +2,8 @@
 
 Freekick contract consists of 2 main contracts, FT(NEP-141) and NFT(NEP-171) contract, both written in Rust.
 
-**FT** is the token used for token economy in Freekick.
+**FT** is the token used for token economy in Freekick.   
+
 **NFT** is an extended NEP-171 contract that holds the informaton of football member's informaiton.
 
 
@@ -10,9 +11,13 @@ Freekick contract consists of 2 main contracts, FT(NEP-141) and NFT(NEP-171) con
 
 To build run:
 ```bash
-// for nft
+<!--
+for nft
+-->
 ./contracts/nft/src/build.sh
-// for ft
+<!--
+for ft
+-->
 .contracts/ft/src/build.sh
 ```
 
