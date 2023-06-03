@@ -1,5 +1,4 @@
 # Freekick contracts
-===================
 
 Freekick contract consists of 2 main contracts, FT(NEP-141) and NFT(NEP-171) contract, both written in Rust.
 
