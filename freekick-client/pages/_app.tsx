@@ -1,8 +1,7 @@
 import "../styles/globals.css";
-import { WalletSelectorContextProvider } from "../contexts/WalletSelectorContext";
 
 function MyApp({ Component, pageProps }) {
-  return <WalletSelectorContextProvider><Component {...pageProps} /></WalletSelectorContextProvider>;
+  return <Component {...pageProps} />;
 }
 
 export default MyApp;
