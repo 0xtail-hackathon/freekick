@@ -5,7 +5,7 @@ import { useWalletSelector } from "@/contexts/WalletSelectorContext";
 import { useCallback, useState } from "react";
 import Modal from "@/components/Modal";
 
-export default function Create() {
+export default function Referee() {
     const [isOpenModal, setOpenModal] = useState<boolean>(false);
     const { selector, modal, accounts, accountId } = useWalletSelector();
 

@@ -1,34 +1,35 @@
 import Navbar from "@/components/Navbar";
-import styles from "./create.module.css";
+import styles from "./club.module.css";
 import Image from "next/image";
 import { useWalletSelector } from "@/contexts/WalletSelectorContext";
 
-export default function Create() {
+export default function Club() {
     const { selector, modal, accounts, accountId } = useWalletSelector();
-    function handleOnClickCreateButton() {
-        console.log("Create!");
-        console.log(accountId);
+
+    function handleOnClickMintButton() {
+        console.log("Confirm!");
+        // TODO: Mint Player's NFT
     }
 
     return (
-        <>
+        <div className={styles.container}>
             <Navbar isHome={false} />
             <main className={styles.main}>
                 <div className={styles.img_box}>
                     <Image
-                        src="/club/create.svg"
-                        alt="create"
+                        src="/club/content.png"
+                        alt="content"
                         width={361}
                         height={598}
                     />
                 </div>
                 <button
                     className={styles.button}
-                    onClick={handleOnClickCreateButton}
+                    onClick={handleOnClickMintButton}
                 >
-                    Create My Club
+                    Mint My Membership
                 </button>
             </main>
-        </>
+        </div>
     );
 }
