@@ -8,9 +8,9 @@ export default function Club() {
             <Seo title="Club" />
 
             <div className="container">
-                <Link href="/club/popup">
+                <Link href="/club/create">
                     <Image
-                        src={"/page_club_review.png"}
+                        src={"/page_club_my_nft.png"}
                         alt="Slide"
                         quality={70}
                         height={400}

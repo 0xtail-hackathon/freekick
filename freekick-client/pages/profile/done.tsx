@@ -2,15 +2,15 @@ import Seo from "@/components/Seo";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Club() {
+export default function Profile() {
     return (
         <div>
-            <Seo title="Club" />
+            <Seo title="Profile" />
 
             <div className="container">
-                <Link href="/club/popup">
+                <Link href="/club">
                     <Image
-                        src={"/page_club_review.png"}
+                        src={"/page_profile_done.png"}
                         alt="Slide"
                         quality={70}
                         height={400}

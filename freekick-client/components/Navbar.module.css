@@ -45,6 +45,10 @@
 
 .account_button {
     background: #EFEFEF;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .signout_button {
