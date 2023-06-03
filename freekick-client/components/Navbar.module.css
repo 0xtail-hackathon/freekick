@@ -27,6 +27,15 @@
     color: #FFFFFF;
 }
 
+.account_button {
+    background: #EFEFEF;
+}
+
+.signout_button {
+    background: #000000;
+    color: #FFFFFF;
+}
+
 .buttons button:hover {
     background-color: #999;
 }

@@ -34,8 +34,8 @@ body {
 
 body {
   width: 39rem;
+  min-height: 85rem;
   margin: auto;
-  min-height: 100vh;
   border: #333 1px solid;
 }
 
