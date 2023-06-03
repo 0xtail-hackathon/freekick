@@ -25,7 +25,7 @@ Client code is writen in React.js and Next.js
 ### Contracts
 
 Smart contracts can be found in `contracts` folder.
-Smart contracts are written in Rust and [`near-sdk`][https://github.com/near/near-sdk-rs].
+Smart contracts are written in Rust and `near-sdk`.
 
 ### Near
 
