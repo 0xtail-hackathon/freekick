@@ -9,9 +9,9 @@ import BN from "bn.js";
 import { CONTRACT_ID } from "../constants";
 import type { Account, Message } from "../interfaces";
 import { useWalletSelector } from "../contexts/WalletSelectorContext";
-import SignIn from "./SignIn";
 import Form from "./Form";
 import Messages from "./Messages";
+import Header from "../components/Header";
 
 type Submitted = SubmitEvent & {
   target: { elements: { [key: string]: HTMLInputElement } };
@@ -263,9 +263,16 @@ const Content: React.FC = () => {
     return (
       <Fragment>
         <div>
-          <button className="p-4 rounded hover:rounded-lg button bg-green-600 text-white" onClick={handleSignIn}>
-            Log in to Freekick
-          </button>
+          <Header
+            loginButton={
+              <button
+                className="p-4 rounded bg-gray-200 text-black"
+                onClick={handleSignIn}
+              >
+                Sign in
+              </button>
+            }
+          />
         </div>
       </Fragment>
     );

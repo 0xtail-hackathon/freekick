@@ -1,10 +1,8 @@
 import Head from "next/head";
-import { useState } from "react";
 import { WalletSelectorContextProvider } from "../contexts/WalletSelectorContext";
 import Content from "../components/Content";
 
 export default function Home() {
-  const [showImport, setShowImport] = useState<boolean>(false);
 
   return (
     <div>

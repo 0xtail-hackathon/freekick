@@ -72,7 +72,6 @@ label {
   color: var(--gray);
 }
 
-button,
 .highlight {
   border-radius: 5px;
   border-color: var(--primary);
@@ -80,11 +79,8 @@ button,
   padding: 0.5em 1em;
 }
 
-button:hover,
 .highlight:hover,
-button:focus,
 .highlight:focus,
-button:focus-within,
 .highlight:focus-within {
   border-color: var(--secondary);
 }
@@ -115,7 +111,6 @@ input[type="checkbox"] {
   margin: 0 1em;
 }
 
-button,
 input {
   background: transparent;
   color: inherit;
@@ -124,21 +119,6 @@ input {
   outline: none;
 }
 
-button {
-  position: relative;
-  transition: top 50ms;
-}
-
-button:hover,
-button:focus {
-  top: -1px;
-}
-
-button:active {
-  background: var(--secondary);
-  border-color: var(--secondary);
-  top: 1px;
-}
 
 .is-premium {
   border-left: 0.25em solid var(--secondary);
