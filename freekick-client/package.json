@@ -13,6 +13,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mintbase-js/react": "^0.4.0-beta.2",
     "@mintbase-js/sdk": "^0.4.0-beta.2",
     "@mintbase-js/storage": "^0.4.0-beta.2",
     "@near-wallet-selector/core": "^8.1.1",
