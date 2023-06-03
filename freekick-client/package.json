@@ -13,15 +13,11 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@mintbase-js/react": "^0.4.0-beta.2",
-    "@mintbase-js/sdk": "^0.4.0-beta.2",
-    "@mintbase-js/storage": "^0.4.0-beta.2",
     "@near-wallet-selector/core": "^8.1.1",
     "@near-wallet-selector/modal-ui": "^8.1.1",
     "@near-wallet-selector/my-near-wallet": "^8.1.1",
     "big.js": "^6.2.1",
     "bn.js": "^5.2.1",
-    "mintbase-ui": "^0.9.71",
     "near-api-js": "^2.1.4",
     "next": "13.4.4",
     "postcss": "8.4.24",
