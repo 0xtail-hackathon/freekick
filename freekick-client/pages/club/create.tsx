@@ -4,10 +4,8 @@ import Image from "next/image";
 import { useWalletSelector } from "@/contexts/WalletSelectorContext";
 
 export default function Create() {
-    const { selector, modal, accounts, accountId } = useWalletSelector();
     function handleOnClickCreateButton() {
-        console.log("Create!");
-        console.log(accountId);
+        window.location.href = "/club/";
     }
 
     return (

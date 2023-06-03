@@ -1,8 +1,7 @@
 import { Account, Contract, connect } from "near-api-js";
 import { AccountView } from "near-api-js/lib/providers/provider";
 import connectionConfig from "./config";
-
-const CONTRACT_ID = "";
+import { CONTRACT_ID } from "@/constants";
 
 export const contractInstance = (account: Account) => {
     const contract = new Contract(account, CONTRACT_ID, {
@@ -26,6 +25,7 @@ export async function getAccountDetail(accountId: string) {
         account_id: accountId,
         finality: "final",
     });
+    return accountDetail;
 }
 
 export async function getContract() {
