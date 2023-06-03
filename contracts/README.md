@@ -10,11 +10,11 @@ Freekick contract consists of 2 main contracts, FT(NEP-141) and NFT(NEP-171) con
 ## Development
 
 To build run:
-for nft
+- for nft:   
 ```bash
 ./contracts/nft/src/build.sh
 ```
-for ft
+- for ft:  
 ```bash
 .contracts/ft/src/build.sh
 ```
