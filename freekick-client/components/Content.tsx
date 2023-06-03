@@ -266,10 +266,15 @@ const Content: React.FC = () => {
           <Header
             loginButton={
               <button
-                className="p-4 rounded bg-gray-200 text-black"
+                className="p-2 rounded-lg bg-gray-200 text-black"
                 onClick={handleSignIn}
               >
                 Sign in
+              </button>
+            }
+            registerButton={
+              <button className="p-2 rounded-lg bg-black text-white">
+                Register
               </button>
             }
           />
