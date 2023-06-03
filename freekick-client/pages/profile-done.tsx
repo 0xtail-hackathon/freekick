@@ -4,19 +4,19 @@ import Content from "../components/Content";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Profile() {
+export default function ProfileDone() {
 
   return (
     <div>
       <Head>
-        <title>Freekick - Profile</title>
+        <title>Freekick - Profile Done</title>
       </Head>
 
       <div>
         <WalletSelectorContextProvider>
-          <Link href="/profile-done">
+          <Link href="/club-review">
             <Image
-              src={"/page-profile.svg"}
+              src={"/page-profile-done.svg"}
               alt="Slide"
               quality={70}
               height={400}

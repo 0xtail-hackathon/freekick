@@ -250,14 +250,14 @@ const Content: React.FC = () => {
           <Header
             loginButton={
               <button
-                className="p-2 rounded-lg bg-gray-200 text-black text-bold"
+                className="p-2 rounded-max bg-gray-200 text-black text-bold"
                 onClick={handleSignIn}
               >
                 Sign in
               </button>
             }
             registerButton={
-              <button className="p-2 rounded-lg bg-black text-white">
+              <button className="p-2 rounded-max bg-black text-white">
                 Create Account
               </button>
             }
@@ -272,7 +272,7 @@ const Content: React.FC = () => {
     <Fragment>
       <div>
         <button
-          className="p-2 rounded-lg bg-gray-200 text-black text-bold"
+          className="p-2 rounded-max bg-gray-200 text-black text-bold"
           onClick={handleSignOut}
         >
           Log out

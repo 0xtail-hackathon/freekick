@@ -9,8 +9,7 @@ export default function Home() {
       <Head>
         <title>Freekick - Home</title>
       </Head>
-
-      <div className="container mx-auto px-10 border-r-4 border-l-4 border-black min-h-screen">
+      <div className="px-6">
         <WalletSelectorContextProvider>
           <Content />
         </WalletSelectorContextProvider>

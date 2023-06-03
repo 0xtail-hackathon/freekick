@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Welcome() {
   return (
     <>
-      <h1 className="text-4xl text-black pb-3 pt-10 px-3 font-bold">
+      <h1 className="text-4xl text-black pb-3 pt-10 px-3 font-semibold">
         Hi, <Link href="/profile">Newbie</Link>!
       </h1>
       <Slider
@@ -20,7 +20,7 @@ export default function Welcome() {
         paginate={true}
         slidesPerView={1}
       />
-      <h2 className="text-3xl text-black pb-3 pt-8 px-3 font-bold">
+      <h2 className="text-3xl text-black pb-3 pt-8 px-3 font-semibold">
         <Link href="/clubs">Club List</Link>
       </h2>
       <div className="py-4">

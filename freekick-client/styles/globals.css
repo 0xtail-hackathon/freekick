@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;500;600&display=swap');
 @import "~@near-wallet-selector/modal-ui/styles.css";
 @import 'swiper/css/pagination';
 
@@ -19,7 +19,7 @@ a {
 body {
   margin: 0 auto;
   padding: 0;
-  max-width: 44rem;
+  max-width: 32rem;
 }
 
 fieldset {

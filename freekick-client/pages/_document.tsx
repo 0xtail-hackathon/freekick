@@ -8,7 +8,9 @@ export default function Document() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <body>
-        <Main />
+        <div className="container mx-auto border-r-4 border-l-4 border-black min-h-screen">
+          <Main />
+        </div>
         <NextScript />
       </body>
     </Html>

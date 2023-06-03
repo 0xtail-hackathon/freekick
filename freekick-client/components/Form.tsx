@@ -13,7 +13,7 @@ const Form: React.FC<FormProps> = ({ account, onSubmit }) => {
   return (
     <form onSubmit={onSubmit}>
       <fieldset id="fieldset">
-        <div className="p-2 rounded-lg bg-black text-white text-bold">
+        <div className="p-2 rounded-max bg-black text-white text-bold">
           {account.account_id}!
         </div>
         <p className="highlight">
@@ -37,7 +37,7 @@ const Form: React.FC<FormProps> = ({ account, onSubmit }) => {
         </p>
         <input id="multiple" type="checkbox" value={0} hidden />
         <button
-          className="p-2 rounded-lg bg-black text-white text-bold"
+          className="p-2 rounded-max bg-black text-white text-bold"
           type="submit"
         >
           Send Club Owner

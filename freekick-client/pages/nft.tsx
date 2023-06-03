@@ -4,20 +4,20 @@ import Content from "../components/Content";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Profile() {
+export default function NFT() {
 
   return (
     <div>
       <Head>
-        <title>Freekick - Profile</title>
+        <title>Freekick - My NFT</title>
       </Head>
 
       <div>
         <WalletSelectorContextProvider>
-          <Link href="/profile-done">
+          <Link href="/">
             <Image
-              src={"/page-profile.svg"}
-              alt="Slide"
+              src={"/page-nft.svg"}
+              alt="Club"
               quality={70}
               height={400}
               width={980}
