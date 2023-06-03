@@ -18,6 +18,7 @@ export default function Welcome() {
           { src: "/newbie-2.png" },
         ]}
         paginate={true}
+        slidesPerView={1}
       />
       <h2 className="text-3xl text-black pb-3 pt-8 px-3 font-bold">
         <Link href="/clubs">Club List</Link>
@@ -47,6 +48,7 @@ export default function Welcome() {
           { src: "/team-1.svg" },
         ]}
         paginate={false}
+        slidesPerView={2}
       />
     </>
   );
