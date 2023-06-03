@@ -1,4 +1,5 @@
 export const CONTRACT_ID = "kick-club-nft.testnet";
+export const CONTRACT_ID2 = "freekick-ft.testnet";
 export const CLUB_URL_1 =
     "https://bafkreif3oxuyaizyazjlisoecbqa7vjjaqorx4le42itwxyj33skkarwyu.ipfs.nftstorage.link/";
 export const CLUB_URL_2 =

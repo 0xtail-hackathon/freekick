@@ -8,7 +8,7 @@ export default function Profile() {
             <Seo title="Profile" />
 
             <div className="container">
-                <Link href="/profile/referee">
+                <Link href="/club/create">
                     <Image
                         src={"/page_profile_my_nft.png"}
                         alt="Slide"

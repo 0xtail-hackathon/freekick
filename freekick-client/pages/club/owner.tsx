@@ -42,7 +42,7 @@ export default function Club() {
             <Navbar isHome={false} />
             <main className={styles.main}>
                 <div className={styles.img_box}>
-                    <Link href="/profile/mynft">
+                    <Link href="/profile/referee">
                         <Image
                             src="/club/content.png"
                             alt="content"

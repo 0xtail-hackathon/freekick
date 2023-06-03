@@ -8,7 +8,7 @@ export default function Club() {
             <Seo title="Club" />
 
             <div className="container">
-                <Link href="/club/create">
+                <Link href="/profile/mynft">
                     <Image
                         src={"/page_club_my_nft.png"}
                         alt="Slide"

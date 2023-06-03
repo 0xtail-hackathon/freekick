@@ -25,3 +25,8 @@
     font-size: 2rem;
     line-height: 2rem;
 }
+
+.button:hover {
+    background: #999;
+    color: #000000;
+}

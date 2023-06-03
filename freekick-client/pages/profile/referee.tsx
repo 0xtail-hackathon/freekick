@@ -14,10 +14,53 @@ export default function Referee() {
         setOpenModal((prev) => !prev);
     }, [isOpenModal]);
 
-    function handleOnClickConfirmButton() {
-        console.log("Confirm!");
+    async function handleOnClickConfirmButton() {
+        // await storageDeposit();
+        await tokenTransfer();
+    }
+
+    function handleOnClickImg() {
         setOpenModal((prev) => !prev);
-        // TODO: transfer tokens to Referee
+    }
+
+    async function storageDeposit() {
+        const wallet = await selector.wallet();
+        wallet.signAndSendTransaction({
+            actions: [
+                {
+                    type: "FunctionCall",
+                    params: {
+                        methodName: "storage_deposit",
+                        args: {
+                            account_id: "kick-coina.testnet",
+                        },
+                        gas: "30000000000000",
+                        deposit: "100000000000000000000000",
+                    },
+                },
+            ],
+        });
+    }
+
+    async function tokenTransfer() {
+        const wallet = await selector.wallet();
+        wallet.signAndSendTransaction({
+            actions: [
+                {
+                    type: "FunctionCall",
+                    params: {
+                        methodName: "ft_transfer",
+                        args: {
+                            receiver_id: "kick-coina.testnet",
+                            amount: "120000000000000000000",
+                            memo: "Referee Reward",
+                        },
+                        gas: "30000000000000",
+                        deposit: "1",
+                    },
+                },
+            ],
+        });
     }
 
     return (
@@ -31,12 +74,11 @@ export default function Referee() {
                         width={298}
                         height={492}
                     />
-                    <button>Test</button>
                 </Modal>
             )}
             <Navbar isHome={false} />
             <main className={styles.main}>
-                <div className={styles.img_box}>
+                <div className={styles.img_box} onClick={handleOnClickImg}>
                     <Image
                         src="/referee/content.svg"
                         alt="content"
