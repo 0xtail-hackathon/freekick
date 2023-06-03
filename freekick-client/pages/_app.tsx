@@ -1,12 +1,29 @@
-import "@/styles/globals.css";
-import type { AppProps } from "next/app";
-import { ChakraProvider } from "@chakra-ui/react";
-import theme from "../utils/theme";
+import "../styles/globals.css";
 
-export default function App({ Component, pageProps }: AppProps) {
-  return (
-    <ChakraProvider theme={theme}>
-      <Component {...pageProps} />{" "}
-    </ChakraProvider>
+//React imports
+import { useEffect, useState } from "react";
+import ClipLoader from "react-spinners/ClipLoader";
+
+//Near imports
+import { initNear } from "../lib/near-setup";
+
+function MyApp({ Component, pageProps }) {
+  const [isLoading, setIsLoading] = useState(true);
+
+  //Loading the NEAR API and setting up the wallet and contract
+  //At the start of the app
+  useEffect(() => {
+    initNear();
+    setIsLoading(false);
+  }, []);
+
+  return isLoading ? (
+    <div className="center-div">
+      <ClipLoader color={"#000"} loading={true} size={50} />
+    </div>
+  ) : (
+    <Component {...pageProps} />
   );
 }
+
+export default MyApp;
