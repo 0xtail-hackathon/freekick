@@ -2,7 +2,11 @@ import { useWalletSelector } from "@/contexts/WalletSelectorContext";
 import styles from "./Navbar.module.css";
 import Image from "next/image";
 
-export default function Navbar() {
+interface NavbarProps {
+    isHome: boolean;
+}
+
+export default function Navbar({ isHome }: NavbarProps) {
     const { selector, modal, accounts, accountId } = useWalletSelector();
 
     const handleSignIn = () => {
@@ -29,14 +33,25 @@ export default function Navbar() {
                 priority
             />
             <nav className={styles.nav}>
-                <Image
-                    src="/logo.svg"
-                    alt="FreeKick Logo"
-                    className={styles.logo}
-                    width={45}
-                    height={45}
-                    priority
-                />
+                {isHome ? (
+                    <Image
+                        src="/logo.svg"
+                        alt="FreeKick Logo"
+                        className={styles.logo}
+                        width={45}
+                        height={45}
+                        priority
+                    />
+                ) : (
+                    <Image
+                        src="/left_arrow.svg"
+                        alt="FreeKick Logo"
+                        className={styles.logo}
+                        width={45}
+                        height={45}
+                        priority
+                    />
+                )}
                 <div className={styles.buttons}>
                     {selector.isSignedIn() && (
                         <>

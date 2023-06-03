@@ -5,7 +5,7 @@ import { WalletSelectorContextProvider } from "@/contexts/WalletSelectorContext"
 function MyApp({ Component, pageProps }: AppProps) {
     return (
         <WalletSelectorContextProvider>
-            <Component {...pageProps} />;
+            <Component {...pageProps} />
         </WalletSelectorContextProvider>
     );
 }

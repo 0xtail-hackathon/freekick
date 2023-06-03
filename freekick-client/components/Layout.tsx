@@ -9,7 +9,7 @@ interface MyProps {
 export default function Layout({ children }: MyProps) {
     return (
         <>
-            <Navbar />
+            <Navbar isHome={true} />
             <main className={styles.main}>{children}</main>
         </>
     );
