@@ -24,8 +24,8 @@ const Slider = ({ slides, paginate }) => {
         slidesPerView: 1,
         spaceBetween: 20,
       },
-      980: {
-        slidesPerView: 2,
+      1400: {
+        slidesPerView: 1,
         spaceBetween: 30,
       },
     },

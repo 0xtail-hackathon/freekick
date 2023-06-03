@@ -6,16 +6,16 @@ import Image from "next/image";
 export default function Welcome() {
   return (
     <>
-      <h1 className="text-4xl text-black py-3 px-3 font-bold">
+      <h1 className="text-4xl text-black pb-3 pt-10 px-3 font-bold">
         Hi, <Link href="/profile">Newbie</Link>!
       </h1>
       <Slider
         slides={[
-          { src: "/newbie.png" },
-          { src: "/newbie.png" },
-          { src: "/newbie.png" },
-          { src: "/newbie.png" },
-          { src: "/newbie.png" },
+          { src: "/newbie-1.png" },
+          { src: "/newbie-2.png" },
+          { src: "/newbie-2.png" },
+          { src: "/newbie-2.png" },
+          { src: "/newbie-2.png" },
         ]}
         paginate={true}
       />
@@ -41,9 +41,9 @@ export default function Welcome() {
       <Slider
         slides={[
           { src: "/team-1.svg" },
+          { src: "/team-2.svg" },
           { src: "/team-1.svg" },
-          { src: "/team-1.svg" },
-          { src: "/team-1.svg" },
+          { src: "/team-2.svg" },
           { src: "/team-1.svg" },
         ]}
         paginate={false}

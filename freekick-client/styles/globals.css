@@ -5,6 +5,10 @@
 @import "~@near-wallet-selector/modal-ui/styles.css";
 @import 'swiper/css/pagination';
 
+:root {
+  --swiper-theme-color: #fff !important;
+}
+
 html,
 body,
 p,
@@ -15,7 +19,7 @@ a {
 body {
   margin: 0 auto;
   padding: 0;
-  max-width: 50rem;
+  max-width: 44rem;
 }
 
 fieldset {

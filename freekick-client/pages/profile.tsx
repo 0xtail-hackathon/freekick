@@ -27,7 +27,6 @@ export default function Profile() {
               objectFit: "cover",
             }}
           />
-          <Content />
         </WalletSelectorContextProvider>
       </div>
     </div>
