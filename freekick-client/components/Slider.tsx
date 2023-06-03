@@ -39,7 +39,7 @@ const Slider = ({ slides, paginate, slidesPerView }) => {
                             key={`slide-${i}`}
                             className="swiper-lazy overflow-hidden"
                         >
-                            <Link href="#">
+                            <Link href="/">
                                 <Image
                                     src={encodeURI(item?.src)}
                                     alt="Slide"
@@ -50,8 +50,8 @@ const Slider = ({ slides, paginate, slidesPerView }) => {
                                     sizes="100vw"
                                     loading="lazy"
                                     style={{
-                                        width: "100%",
-                                        height: "auto",
+                                        width: "auto",
+                                        height: "280px",
                                         objectFit: "cover",
                                     }}
                                 />

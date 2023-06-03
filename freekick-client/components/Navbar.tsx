@@ -34,7 +34,7 @@ export default function Navbar({ isHome }: NavbarProps) {
                 priority
             />
             <nav className={styles.nav}>
-                <Link href={"/home"}>
+                <Link href={"/"}>
                     {isHome ? (
                         <Image
                             src="/logo.svg"

@@ -36,7 +36,7 @@ export default function Club() {
                 ],
             })
             .then(() => {
-                window.location.href = "/home";
+                window.location.href = "/";
             });
     }
 
