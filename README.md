@@ -20,7 +20,7 @@ Freekick allows **transparent** operation of football club as all currency flows
 ### Client
 
 Client code can be found in the `freekick-client` folder.
-Client code is writen in React.js and Next.js
+Client code is writen in React / Next.js and makes use of the `near-api-js` and `@near-wallet-selector` libraries.
 
 ### Contracts
 
