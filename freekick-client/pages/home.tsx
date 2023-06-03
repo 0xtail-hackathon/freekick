@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./home.module.css";
 import Slider from "@/components/Slider";
 import Layout from "@/components/Layout";
@@ -33,6 +32,7 @@ export default function Home() {
                             { src: "/home/club_card_1.svg" },
                         ]}
                         paginate={false}
+                        slidesPerView={1}
                     />
                     {/* card 1 */}
                     {/* <div className={styles.card}>

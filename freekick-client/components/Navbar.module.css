@@ -19,8 +19,7 @@
 }
 
 .signin_button {
-    background: #EFEFEF;
-}
+    background: #EFEFEF;}
 
 .signup_button {
     background: #000000;
@@ -34,6 +33,10 @@
 .signout_button {
     background: #000000;
     color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
 }
 
 .buttons button:hover {

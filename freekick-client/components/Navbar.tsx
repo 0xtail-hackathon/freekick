@@ -41,13 +41,17 @@ export default function Navbar() {
                     {selector.isSignedIn() && (
                         <>
                             <button className={styles.account_button}>
-                                {accountId}
+                                1,000,000 KIC
                             </button>
-                            <button
-                                className={styles.signout_button}
-                                onClick={handleSignOut}
-                            >
-                                Sign Out
+                            <button className={styles.signout_button}>
+                                {accountId}
+                                <Image
+                                    src={"/arrow_down.svg"}
+                                    alt="arrow down icon"
+                                    width={10}
+                                    height={5}
+                                    onClick={handleSignOut}
+                                />
                             </button>
                         </>
                     )}
