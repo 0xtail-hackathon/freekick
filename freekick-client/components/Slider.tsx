@@ -6,7 +6,7 @@ import Image from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";
 
-const Slider = ({ slides }) => {
+const Slider = ({ slides, paginate }) => {
 
   SwiperCore.use([Pagination]);
 
@@ -18,7 +18,7 @@ const Slider = ({ slides }) => {
     cssMode: false,
     spaceBetween: 30,
     freeMode: true,
-    pagination: { clickable: true, },
+    pagination: paginate ? { clickable: true, } : false,
     breakpoints: {
       0: {
         slidesPerView: 1,
