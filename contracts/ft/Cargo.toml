@@ -1,5 +1,5 @@
 [package]
-name = "kik"
+name = "kic"
 version = "1.0.0"
 authors = ["Doyoung Kim <doyoungkim0327@gmail.com>"]
 edition = "2018"
