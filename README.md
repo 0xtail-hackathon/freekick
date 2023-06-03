@@ -1,4 +1,4 @@
-# Ethseoul 2023 Freekick
+# ETHSeoul 2023 Freekick
 Team: 0xtail
 Contributors: 
 - Seokhun Yoon (@imysh578)
@@ -20,7 +20,7 @@ Freekick allows **transparent** operation of football club as all currency flows
 ### Client
 
 Client code can be found in the `freekick-client` folder.
-Client code is writen in React / Next.js and makes use of the `near-api-js` and `@near-wallet-selector` libraries.
+Client code is written in React / Next.js and makes use of the `near-api-js` and `@near-wallet-selector` libraries for interacting with the NEAR blockchain.
 
 ### Contracts
 
