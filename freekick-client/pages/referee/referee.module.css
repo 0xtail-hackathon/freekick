@@ -1,0 +1,31 @@
+.container {
+    background: conic-gradient(from 111.58deg at 75.64% 50.95%, #A9A9A9 0deg, #515151 0.04deg, #778994 93.6deg, #A2ADAD 221.25deg, #DADBDC 360deg);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.img_box {
+    margin-bottom: 2rem;
+}
+
+.button {
+    width: 34.5rem;
+    height: 7rem;
+    background: #FFFFFF;
+    border-radius: 3.8rem;
+    color: #000000;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.button:hover {
+    background-color: #999;
+    color: #FFFFFF;
+}

@@ -1,6 +1,7 @@
 import { useWalletSelector } from "@/contexts/WalletSelectorContext";
 import styles from "./Navbar.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 interface NavbarProps {
     isHome: boolean;
@@ -33,25 +34,27 @@ export default function Navbar({ isHome }: NavbarProps) {
                 priority
             />
             <nav className={styles.nav}>
-                {isHome ? (
-                    <Image
-                        src="/logo.svg"
-                        alt="FreeKick Logo"
-                        className={styles.logo}
-                        width={45}
-                        height={45}
-                        priority
-                    />
-                ) : (
-                    <Image
-                        src="/left_arrow.svg"
-                        alt="FreeKick Logo"
-                        className={styles.logo}
-                        width={45}
-                        height={45}
-                        priority
-                    />
-                )}
+                <Link href={"/home"}>
+                    {isHome ? (
+                        <Image
+                            src="/logo.svg"
+                            alt="FreeKick Logo"
+                            width={45}
+                            height={45}
+                            priority
+                        />
+                    ) : (
+                        <div className={styles.logo}>
+                            <Image
+                                src="/left_arrow.svg"
+                                alt="FreeKick Logo"
+                                width={18}
+                                height={18}
+                                priority
+                            />
+                        </div>
+                    )}
+                </Link>
                 <div className={styles.buttons}>
                     {selector.isSignedIn() && (
                         <>

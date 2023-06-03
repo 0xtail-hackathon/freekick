@@ -4,6 +4,22 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 3rem;
+    height: 3rem;
+    border: 0.5px solid #000000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo:hover {
+    background-color: #EFEFEF;
+    border: none;
 }
 
 .buttons {
@@ -19,7 +35,8 @@
 }
 
 .signin_button {
-    background: #EFEFEF;}
+    background: #EFEFEF;
+}
 
 .signup_button {
     background: #000000;
