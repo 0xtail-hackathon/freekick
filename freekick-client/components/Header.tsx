@@ -1,13 +1,17 @@
 import React from "react";
+import Image from "next/image";
 
-export default function Header ({ loginButton }) {
+export default function Header({ loginButton, registerButton }) {
   return (
     <nav className="bg-white border-gray-200 dark:bg-gray-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#" className="flex items-center">
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            Freekick
-          </span>
+          <Image
+            src="/freekick.svg"
+            width={50}
+            height={50}
+            alt="Picture of the author"
+          />
         </a>
         <button
           data-collapse-toggle="navbar-default"
@@ -35,16 +39,10 @@ export default function Header ({ loginButton }) {
         <div className="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>{loginButton}</li>
-            <li>
-              <button
-                className="p-4 rounded bg-black text-white"
-              >
-                Register
-              </button>
-            </li>
+            <li>{registerButton}</li>
           </ul>
         </div>
       </div>
     </nav>
   );
-};
+}

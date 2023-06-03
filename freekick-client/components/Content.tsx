@@ -12,6 +12,7 @@ import { useWalletSelector } from "../contexts/WalletSelectorContext";
 import Form from "./Form";
 import Messages from "./Messages";
 import Header from "../components/Header";
+import Welcome from "../components/Welcome";
 
 type Submitted = SubmitEvent & {
   target: { elements: { [key: string]: HTMLInputElement } };
@@ -128,21 +129,6 @@ const Content: React.FC = () => {
     });
   };
 
-  const handleSwitchWallet = () => {
-    modal.show();
-  };
-
-  const handleSwitchAccount = () => {
-    const currentIndex = accounts.findIndex((x) => x.accountId === accountId);
-    const nextIndex = currentIndex < accounts.length - 1 ? currentIndex + 1 : 0;
-
-    const nextAccountId = accounts[nextIndex].accountId;
-
-    selector.setActiveAccount(nextAccountId);
-
-    alert("Switched account to " + nextAccountId);
-  };
-
   const addMessages = useCallback(
     async (message: string, donation: string, multiple: boolean) => {
       const { contract } = selector.store.getState();
@@ -203,23 +189,6 @@ const Content: React.FC = () => {
     [selector, accountId]
   );
 
-  const handleVerifyOwner = async () => {
-    const wallet = await selector.wallet();
-    try {
-      const owner = await wallet.verifyOwner({
-        message: "test message for verification",
-      });
-
-      if (owner) {
-        alert(`Signature for verification: ${JSON.stringify(owner)}`);
-      }
-    } catch (err) {
-      const message =
-        err instanceof Error ? err.message : "Something went wrong";
-      alert(message);
-    }
-  };
-
   const handleSubmit = useCallback(
     async (e: Submitted) => {
       e.preventDefault();
@@ -266,14 +235,20 @@ const Content: React.FC = () => {
           <Header
             loginButton={
               <button
-                className="p-4 rounded bg-gray-200 text-black"
+                className="p-2 rounded-lg bg-gray-200 text-black text-bold"
                 onClick={handleSignIn}
               >
                 Sign in
               </button>
             }
+            registerButton={
+              <button className="p-2 rounded-lg bg-black text-white">
+                Create Account
+              </button>
+            }
           />
         </div>
+        <Welcome />
       </Fragment>
     );
   }
@@ -281,12 +256,12 @@ const Content: React.FC = () => {
   return (
     <Fragment>
       <div>
-        <button onClick={handleSignOut}>Log out</button>
-        <button onClick={handleSwitchWallet}>Switch Wallet</button>
-        <button onClick={handleVerifyOwner}>Verify Owner</button>
-        {accounts.length > 1 && (
-          <button onClick={handleSwitchAccount}>Switch Account</button>
-        )}
+        <button
+          className="p-2 rounded-lg bg-gray-200 text-black text-bold"
+          onClick={handleSignOut}
+        >
+          Log out
+        </button>
       </div>
       <Form
         account={account}
