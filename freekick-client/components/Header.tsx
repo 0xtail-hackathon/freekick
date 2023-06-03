@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-export default function Header({ loginButton, registerButton }) {
+export default function Header({ loginButton, registerButton }: any) {
   return (
     <nav className="bg-white">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
