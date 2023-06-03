@@ -13,6 +13,7 @@ import Form from "./Form";
 import Messages from "./Messages";
 import Header from "../components/Header";
 import Welcome from "../components/Welcome";
+import Image from "next/image";
 
 type Submitted = SubmitEvent & {
   target: { elements: { [key: string]: HTMLInputElement } };
@@ -232,6 +233,20 @@ const Content: React.FC = () => {
     return (
       <Fragment>
         <div>
+          <Image
+            src="/mobile-header.svg"
+            alt="Mobile Header"
+            quality={70}
+            height={400}
+            width={980}
+            sizes="100vw"
+            loading="lazy"
+            style={{
+              width: "100%",
+              height: "auto",
+              objectFit: "cover",
+            }}
+          />
           <Header
             loginButton={
               <button

@@ -6,26 +6,25 @@ import Image from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";
 
-const Slider = ({ slides, paginate }) => {
-
+const Slider = ({ slides, paginate, slidesPerView }) => {
   SwiperCore.use([Pagination]);
 
   const params = {
     className: "mySwiper",
-    slidesPerView: 1,
+    slidesPerView: slidesPerView,
     speed: 900,
     grabCursor: false,
     cssMode: false,
     spaceBetween: 30,
     freeMode: true,
-    pagination: paginate ? { clickable: true, } : false,
+    pagination: paginate ? { clickable: true } : false,
     breakpoints: {
       0: {
-        slidesPerView: 1,
+        slidesPerView: slidesPerView,
         spaceBetween: 20,
       },
-      980: {
-        slidesPerView: 2,
+      1400: {
+        slidesPerView: slidesPerView,
         spaceBetween: 30,
       },
     },
@@ -63,7 +62,9 @@ const Slider = ({ slides, paginate }) => {
         );
       })}
     </Swiper>
-  ) : <></>;
+  ) : (
+    <></>
+  );
 };
 
 export default Slider;
