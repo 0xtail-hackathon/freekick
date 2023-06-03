@@ -1,18 +1,29 @@
-html,
-body {
+* {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  border: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+  width: 39rem;
+  margin: auto;
+  min-height: 100vh;
+  border: #333 1px solid;
 }
 
 a {
   color: inherit;
   text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 .center-div {
@@ -44,5 +55,3 @@ a {
   cursor: pointer;
   transition: 0.2s;
 }
-
-
