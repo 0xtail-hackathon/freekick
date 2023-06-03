@@ -1,5 +1,5 @@
 import Navbar from "@/components/Navbar";
-import styles from "./club.module.css";
+import styles from "./owner.module.css";
 import Image from "next/image";
 import { useWalletSelector } from "@/contexts/WalletSelectorContext";
 import { CLUB_URL_1 } from "@/constants";
