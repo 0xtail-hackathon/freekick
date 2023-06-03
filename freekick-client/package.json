@@ -1,32 +1,40 @@
 {
-    "name": "freekick-client",
-    "version": "0.1.0",
-    "private": true,
-    "scripts": {
-        "dev": "next dev",
-        "build": "next build",
-        "build-contract": "asb --target debug",
-        "deploy-contract": "yarn build-contract && near dev-deploy ./build/debug/contract.wasm",
-        "clean-contract": "rm -rf ./build && rm -rf ./neardev",
-        "run-contract": "./contract/scripts/run.sh",
-        "start": "next start",
-        "lint": "next lint"
-    },
-    "dependencies": {
-        "@types/node": "20.2.5",
-        "@types/react": "18.2.8",
-        "@types/react-dom": "18.2.4",
-        "autoprefixer": "10.4.14",
-        "cnz": "^1.0.6",
-        "eslint": "8.42.0",
-        "eslint-config-next": "13.4.4",
-        "near-api-js": "^2.1.4",
-        "next": "13.4.4",
-        "postcss": "8.4.24",
-        "react": "18.2.0",
-        "react-dom": "18.2.0",
-        "react-spinners": "^0.13.8",
-        "tailwindcss": "3.3.2",
-        "typescript": "5.1.3"
-    }
+  "name": "freekick-client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "build-contract": "asb --target debug",
+    "deploy-contract": "yarn build-contract && near dev-deploy ./build/debug/contract.wasm",
+    "clean-contract": "rm -rf ./build && rm -rf ./neardev",
+    "run-contract": "./contract/scripts/run.sh",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@near-wallet-selector/core": "^8.1.1",
+    "@near-wallet-selector/modal-ui": "^8.1.1",
+    "@near-wallet-selector/my-near-wallet": "^8.1.1",
+    "big.js": "^6.2.1",
+    "bn.js": "^5.2.1",
+    "near-api-js": "^2.1.4",
+    "next": "13.4.4",
+    "postcss": "8.4.24",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "swiper": "^9.3.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "10.4.14",
+    "tailwindcss": "3.3.2",
+    "typescript": "5.1.3",
+    "eslint": "8.42.0",
+    "eslint-config-next": "13.4.4",
+    "@types/node": "20.2.5",
+    "@types/react": "18.2.8",
+    "@types/react-dom": "18.2.4",
+    "@types/big.js": "^6.1.6",
+    "@types/bn.js": "^5.1.1"
+  }
 }
