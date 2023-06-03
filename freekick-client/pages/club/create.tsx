@@ -16,7 +16,7 @@ export default function Create() {
             <main className={styles.main}>
                 <div className={styles.img_box}>
                     <Image
-                        src="/club/create.png"
+                        src="/club/create.svg"
                         alt="create"
                         width={361}
                         height={598}
