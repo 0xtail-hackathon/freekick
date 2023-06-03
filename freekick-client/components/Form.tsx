@@ -13,13 +13,15 @@ const Form: React.FC<FormProps> = ({ account, onSubmit }) => {
   return (
     <form onSubmit={onSubmit}>
       <fieldset id="fieldset">
-        <p>Sign the guest book, {account.account_id}!</p>
+        <div className="p-2 rounded-lg bg-black text-white text-bold">
+          {account.account_id}!
+        </div>
         <p className="highlight">
           <label htmlFor="message">Message:</label>
           <input autoComplete="off" autoFocus id="message" required />
         </p>
         <p>
-          <label htmlFor="donation">Donation (optional):</label>
+          <label htmlFor="donation">Game fee:</label>
           <input
             autoComplete="off"
             defaultValue={"0"}
@@ -33,11 +35,13 @@ const Form: React.FC<FormProps> = ({ account, onSubmit }) => {
           />
           <span title="NEAR Tokens">Ⓝ</span>
         </p>
-        <p>
-          <label htmlFor="multiple">Multiple Transactions:</label>
-          <input id="multiple" type="checkbox" />
-        </p>
-        <button type="submit">Sign</button>
+        <input id="multiple" type="checkbox" value={0} hidden />
+        <button
+          className="p-2 rounded-lg bg-black text-white text-bold"
+          type="submit"
+        >
+          Send Club Owner
+        </button>
       </fieldset>
     </form>
   );

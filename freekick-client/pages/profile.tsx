@@ -2,12 +2,12 @@ import Head from "next/head";
 import { WalletSelectorContextProvider } from "../contexts/WalletSelectorContext";
 import Content from "../components/Content";
 
-export default function Home() {
+export default function Profile() {
 
   return (
     <div>
       <Head>
-        <title>Freekick - Home</title>
+        <title>Freekick - Profile</title>
       </Head>
 
       <div className="container mx-auto px-4">
