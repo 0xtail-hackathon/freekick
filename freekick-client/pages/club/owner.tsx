@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import styles from "./owner.module.css";
 import Image from "next/image";
 import { useWalletSelector } from "@/contexts/WalletSelectorContext";
-import { CLUB_URL_1 } from "@/constants";
+import { CLUB_URL_1, CONTRACT_ID } from "@/constants";
 import Link from "next/link";
 
 export default function Club() {
@@ -15,6 +15,7 @@ export default function Club() {
     async function nftMint() {
         const wallet = await selector.wallet();
         wallet.signAndSendTransaction({
+            receiverId: CONTRACT_ID,
             actions: [
                 {
                     type: "FunctionCall",
